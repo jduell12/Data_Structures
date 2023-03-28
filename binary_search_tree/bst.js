@@ -33,6 +33,11 @@ class BinarySearchTree {
       //your code here
       return
     }
+    
+    get_max(){
+      //your code here
+      return
+    }
   
     // Call the function `callbackFunc` on the value of each node
     for_each(callbackFunc) {
