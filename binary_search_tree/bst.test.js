@@ -29,8 +29,8 @@ describe('BinarySearchTree', ()=>{
         bst.insert(3)
         bst.insert(7)
         
-        expect(bst.contains(7)).toBeTrue();
-        expect(bst.contains(10)).toBeFalse();
+        expect(bst.contains(7)).toBe(true);
+        expect(bst.contains(10)).toBe(false);
     })
     
     it('[4] get_max', ()=>{
@@ -53,20 +53,20 @@ describe('BinarySearchTree', ()=>{
         
         bst.for_each(cb);
         
-        expect(arr.includes(5)).toBeTrue();
-        expect(arr.includes(10)).toBeTrue();
-        expect(arr.includes(1)).toBeTrue();
-        expect(arr.includes(20)).toBeTrue();
-        expect(arr.includes(13)).toBeTrue();
-        expect(arr.includes(33)).toBeTrue();
+        expect(arr.includes(5)).toBe(true);
+        expect(arr.includes(10)).toBe(true);
+        expect(arr.includes(1)).toBe(true);
+        expect(arr.includes(20)).toBe(true);
+        expect(arr.includes(13)).toBe(true);
+        expect(arr.includes(33)).toBe(true);
     })
     
     it('[6] traversals', ()=>{
         const nodes = [1, 2, 3, 4, 5, 6, 7];
-        const bft_nodes = [1, 5, 3, 7, 6, 4, 2];
-        const dft_nodes = [1, 5, 7, 6, 3, 4, 2];
-        const pre_nodes = [1, 5, 3, 2, 4, 7, 6];
-        const post_nodes = [2, 4, 3, 6, 7, 5, 1]
+        const bft_nodes = [5, 1,  7, 3, 6,  2, 4,];
+        const dft_nodes = [5, 7, 6, 1, 3, 4, 2];
+        const pre_nodes = [ 5, 1, 3, 2, 4, 7, 6];
+        const post_nodes = [2, 4, 3, 1, 6, 7, 5]
         
         bst.insert(1)
         bst.insert(7)
