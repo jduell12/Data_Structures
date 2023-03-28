@@ -29,10 +29,6 @@ describe('SinglyLinkedList', ()=>{
         expect(list.remove_from_head()).toBe(10);
         expect(list.remove_from_head()).toBe(20);
         expect(list.length).toBe(0);
-        
-        list.add_to_tail(10);
-        expect(list.head).toBeNull();
-        expect(list.tail).toBeNull();
     })
     
     it('remove_from_tail works', ()=>{
