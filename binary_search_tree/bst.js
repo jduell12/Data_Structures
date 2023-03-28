@@ -57,8 +57,7 @@ class BinarySearchTree {
     }
     
     // Return the order of nodes when doing an iterative depth first traversal
-    dft_traversal(){
-        const nodes = []
+    dft_traversal(nodes=[]){
         //your code here
          return nodes;
     }
@@ -67,15 +66,14 @@ class BinarySearchTree {
      //Note: Research may be required
      
      // Return the order of nodes when doing a Pre-order recursive DFT
-    pre_order_dft(){
-        const nodes = []
+    pre_order_dft(nodes = []){
         //your code here
          return nodes;
     }
     
     // Return the order of nodes when doing a Post-order recursive DFT
-    post_order_dft(){
-        const nodes = []
+    post_order_dft( nodes = []){
+  
         //your code here
          return nodes;
     }
