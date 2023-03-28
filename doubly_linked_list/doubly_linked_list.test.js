@@ -83,12 +83,12 @@ describe('DoublyLinkedList', ()=>{
     
     it('move_to_end works', ()=>{
         list.add_to_head(40)
-        expect(list.head.value).toBe(1);
-        expect(list.tail.value).toBe(40);
-
-        list.move_to_end(list.head);
         expect(list.head.value).toBe(40);
         expect(list.tail.value).toBe(1);
+
+        list.move_to_end(list.head);
+        expect(list.head.value).toBe(1);
+        expect(list.tail.value).toBe(40);
         expect(list.length).toBe(2);
         
         list.add_to_tail(4)
